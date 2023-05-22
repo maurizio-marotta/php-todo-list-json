@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  margin: 45px 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: blue;
+}
+
+span:hover{
+  cursor: pointer;
+}
+
+.decoration{
+  text-decoration: line-through;
+}
+
+.d-none{
+  display: none;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-title{
+  background-color: rgba(243, 0, 0, 0.151);
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 50px;
+  color: blue;
+}
+
+/*Input*/
+
+.input button{
+  padding: 7px 10px;
+  margin-left: 10px;
+  font-size: medium;
+  background-color:lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 20px 0;
+
+}
+
+.input-text{
+  padding: 5px;
+  font-size: medium;
+}
+
+
+/*Main*/
+main{
+  display: flex;
+  justify-content: center;
+}
+
+main i{
+  font-size: 20px;
+  margin: 0 3px;
+  }
+
+
+.title-list{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.title-list h3:first-child {
+  width: 80%;
+}
+
+.container-list{
+  width: 80%;
+  height:650px;
+  background-color: rgba(243, 0, 0, 0.151);
+  border-radius: 10px;
+}
+
+.fa-regular.fa-square:hover{
+  color:#BD5D5D;
+  cursor: pointer;
+}
+
+
+
+.fa-solid.fa-trash-can:hover{
+  color: red;
+  cursor: pointer;
+}
