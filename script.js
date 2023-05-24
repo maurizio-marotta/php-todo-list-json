@@ -3,25 +3,7 @@ const {createApp} = Vue;
 createApp({
 data(){
   return{
-  lists:
-    [
-      {
-        text:'fare esercizi',
-        done: true,
-      },
-      {
-        text:'comprare da mangiare',
-        done: false,
-      },
-      {
-        text:'guardare la partita',
-        done: false,
-      },
-      {
-        text:'uscire con amici',
-        done: true,
-      },
-    ],
+    lists: './lista.json',
     AddToDo: '',
     
   }
