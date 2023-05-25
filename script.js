@@ -17,6 +17,29 @@ createApp({
         this.lists = result.data;
       })
     },
+    /*addTask(){
+      const data = new FormData(); 
+      data.append('todoItem', this.AddToDo);
+      
+      axios.post(this.ApiUrl, data)
+      .then(result =>{
+        this.AddToDo = '';
+        this.lists= result.data;
+        console.log('this.list');
+      })
+    },*/
+    addTask(){
+      const data ={
+        todoItem: this.AddToDo
+      }
+      axios.post(this.ApiUrl,data,{
+        headers:{'content-Type': 'multipart/form-data'}
+      }).then(result =>{
+        this.AddToDo = '';
+        this.lists = result.data;
+        console.log(this.lists)
+      })
+    }
 
 
   },

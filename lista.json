@@ -1,16 +1,1 @@
-[
-  {
-    "text":"fare esercizi",
-    "done": true
-  },
-  {
-    "text":"comprare da mangiare",
-    "done": true
-  },  {
-    "text":"guardare la partita",
-    "done": true
-  },  {
-    "text":"uscire con amici",
-    "done": true
-  }
-]
+[{"text":"fare esercizi","done":true},{"text":"comprare da mangiare","done":true},{"text":"guardare la partita","done":true},{"text":"uscire con amici","done":true},"ciao","ciao",{"text":"ciao","done":false}]

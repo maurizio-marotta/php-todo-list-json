@@ -13,15 +13,15 @@
 
 <body>
 
-<div id="app">
+<div id="app" >
   <header>
     <div class="container-title">
       <div class="title">TO DO LIST</div>
     </div>
   </header>
   <div class="input">
-    <input @keyup.enter="NewToDo" v-model.trim="AddToDo" class="input-text" type="text" placeholder= "cose da fare">
-    <button @click="NewToDo"><i class="fa-solid fa-plus"></i></button>
+    <input @keyup.enter="addTask" v-model.trim="AddToDo" class="input-text" type="text" placeholder= "cose da fare">
+    <button @click="addTask"><i class="fa-solid fa-plus"></i></button>
   </div>
     <main>
       <div class="container-list">
@@ -42,8 +42,9 @@
     </main>
 </div>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js' integrity='sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg==' crossorigin='anonymous'></script>
   <script src="script.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js' integrity='sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg==' crossorigin='anonymous'></script>
+
 
 </body>
 </html>
