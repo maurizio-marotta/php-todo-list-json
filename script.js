@@ -1,27 +1,27 @@
 const {createApp} = Vue;
 
 createApp({
-data(){
-  return{
-    lists: './lista.json',
-    AddToDo: '',
-    
-  }
-},
-
-methods:{
-  deleteRow(i){
-    this.lists.splice(i,1);
-  },
-  NewToDo(){
-    const ToDo = {
-      text: this.AddToDo,
-      done: false
+  data(){
+    return{
+      ApiUrl: 'server.php',
+      lists:[],
+      AddToDo: ''
     }
-    console.log(this.AddToDo)
-    this.lists.unshift(ToDo)
-    this.AddToDo="";
-  }
-  
-}
-}).mount('#app')
+  },
+
+  methods:{
+    getApi(){
+      axios.get(this.ApiUrl)
+      .then(result => {
+        console.log(result.data);
+        this.lists = result.data;
+      })
+    },
+
+
+  },
+
+  mounted(){
+    this.getApi();
+  },
+}).mount('#app');
